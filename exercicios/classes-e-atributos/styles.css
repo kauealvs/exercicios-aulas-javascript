@@ -1,0 +1,19 @@
+.ativo {
+	background: rgb(4, 214, 4) !important;
+	width: 100px;
+	height: 100px;
+	color: #fff !important;
+	font: 18px;
+	font-weight: 700;
+	border-radius: 5px;
+}
+
+.inativo {
+	background: rgb(255, 110, 91);
+	width: 100px;
+	height: 100px;
+	color: rgb(172, 172, 172);
+	font: 18px;
+	font-weight: 700;
+	border-radius: 5px;
+}
