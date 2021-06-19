@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	max-width: 1366px;
+}
+
+.section-exercices {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.police {
+	position: relative;
+	top: 25px;
+	width: 50px;
+	height: 50px;
+	border: solid 1px #000;
+	border-radius: 50px 50px 0px 0px;
+}
+
+.img-police {
+	width: 200px;
+	height: 200px;
+}
+
+.timer {
+	display: flex;
+	justify-content: center;
+}
+
+.contagem {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.iniciar {
+	margin-right: 20px;
+}
