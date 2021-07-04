@@ -2,6 +2,11 @@
 let lista = document.querySelectorAll("li");
 let botao = document.querySelector("button");
 let elementoa = document.querySelector("a");
+let adiciona = document.querySelector(".btn-toggle");
+
+function eventos() {
+	adiciona.addEventListener("click", adicionaClasseAtivo(lista))
+}
 
 lista = Array.from(lista);
 const adicionaClasseAtivo = (lista) => {
@@ -41,5 +46,8 @@ const toggleClases = (lista) => {
 	});
 	return percorreArray;
 };
+
 //crie uma função que modifique o href dos elemtos do menu
 console.log(elementoa.getAttribute("href"));
+
+eventos();
