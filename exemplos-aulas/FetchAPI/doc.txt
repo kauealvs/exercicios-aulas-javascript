@@ -1,0 +1,11 @@
+Documento aleatório de texto texto.
+
+estou pegando esse texto do documento por meio da fetch API.
+
+e testando aqui. jhsjdhdh
+
+jjsdjsjdsd
+
+oi francisco
+
+peguei pelo fetch
