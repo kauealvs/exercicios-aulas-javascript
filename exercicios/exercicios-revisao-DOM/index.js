@@ -20,13 +20,39 @@ console.log(listaItens)
 // Use a conotação (“elemento”) para capturar por elemento;
 
 //troque o titulo de H1 para "Lista de compras".
-titulo.textContent = "Lista de compras"
+titulo.innerHTML = "Lista de compras"
 //troque o subtitulo para "Aqui está anotado minha lista de compras"
-subtitulo.textContent = "Aqui está anotado minha lista de compras"
+subtitulo.innerHTML = "Aqui está anotado minha lista de compras"
 //altere os itens da lista
-listaItens[0].textContent = "Caderno";
-listaItens[1].textContent = "Lapiz"
-listaItens[2].textContent = "Celular"
-listaItens[3].textContent = "Mochila"
+const newArray = ["Caderno", "Lapiz", "Celular", "Mochila"]
+
+const alteraItens = () => {
+    newArray.map((item) => {
+        const newItem = document.createElement("li");
+        newItem.textContent = item;
+        // listaItens.appendChild(newItem)
+    })
+}
+
+alteraItens()
+
 
 //adicione mais itens de compras a lista
+
+const arrayItens = ["Lapiseira", "Borracha", "Tablet", "Notebook"]
+const ol = document.querySelector(".others")
+
+
+const additens = () => {
+    arrayItens.map((item) => {
+        const newItem = document.createElement("li");
+        newItem.textContent = item;
+        ol.appendChild(newItem)
+    })
+
+}
+
+additens();
+
+
+
