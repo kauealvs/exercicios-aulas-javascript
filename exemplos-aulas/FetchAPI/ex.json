@@ -1,0 +1,19 @@
+[
+	{
+		"id": 1,
+		"nome": "kaue",
+		"dev": true
+	},
+	{
+		"nome": "Francisco",
+		"dev": true
+	},
+	{
+		"nome": "Bia",
+		"dev": true
+	},
+	{
+		"nome": "Flávia",
+		"dev": false
+	}
+]
