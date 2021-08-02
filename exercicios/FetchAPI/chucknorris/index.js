@@ -2,9 +2,8 @@
 // retorne uma piada randomica do chucknorris, toda vez que
 // clicar em próxima
 
-//    let bntRandom = document.querySelector(".button") 
 
-   const chuckNorrisApi = () => {
+const chuckNorrisApi = () => {
 
         let url = "https://api.chucknorris.io/jokes/random";
 
@@ -15,19 +14,29 @@
         
     }
 
-    // console.log(bntRandom)
-
     const showinfos = (item) => {
         const icon = document.querySelector(".icon");
         icon.innerHTML = item.icon_url
     
         const joke = document.querySelector(".joke");
         joke.innerHTML = item.value
+
+        icon.setAttribute("src", `${item.icon_url}`)
     }
 
-    // bntRandom.addEventListener("click", chuckNorrisApi())
+    let msg = document.querySelector(".icon")
 
-    document.querySelector(".button").addEventListener("click", chuckNorrisApi());
+    
+    let bntRandom = document.querySelector(".button")
+    
+    bntRandom.addEventListener("click", chuckNorrisApi)
+    
+    bntRandom.addEventListener('click', ()=>{
+        msg.classList.add('reveal');
+      })
+
+
+    // document.querySelector(".button").addEventListener("click", chuckNorrisApi());
 
 
 
